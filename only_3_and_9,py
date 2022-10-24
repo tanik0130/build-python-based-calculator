@@ -1,0 +1,12 @@
+# input:
+# 6 9 12 15 18 21 27 80 48 90
+new_list = []
+print("Enter 10 numbers:")
+my_list = [int(x) for x in input().split()]
+print("List of numbers that are multiples of both 9 and 3 : ",end="")
+for x in my_list:
+    if x%3==0 and x%9==0:
+        new_list.append(x)
+
+
+print(new_list)
